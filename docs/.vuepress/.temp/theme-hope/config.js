@@ -1,14 +1,14 @@
-import { HopeIcon, Layout, NotFound, injectDarkmode, setupDarkmode, setupSidebarItems, scrollPromise } from "/Users/yangyang/vuepress-starter/node_modules/vuepress-theme-hope/lib/bundle/export.js";
+import { HopeIcon, Layout, NotFound, injectDarkmode, setupDarkmode, setupSidebarItems, scrollPromise } from "/Users/yangyang/docs/node_modules/vuepress-theme-hope/lib/bundle/export.js";
 
-import { defineCatalogInfoGetter } from "/Users/yangyang/vuepress-starter/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
+import { defineCatalogInfoGetter } from "/Users/yangyang/docs/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
 import { h } from "vue"
-import { GlobalEncrypt, LocalEncrypt } from "/Users/yangyang/vuepress-starter/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/export.js";
-import "/Users/yangyang/vuepress-starter/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/styles/all.scss"
+import { GlobalEncrypt, LocalEncrypt } from "/Users/yangyang/docs/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/export.js";
+import "/Users/yangyang/docs/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/styles/all.scss"
 
-import "/Users/yangyang/vuepress-starter/node_modules/@vuepress/helper/lib/client/styles/colors.css";
-import "/Users/yangyang/vuepress-starter/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
-import "/Users/yangyang/vuepress-starter/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
-import "/Users/yangyang/vuepress-starter/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
+import "/Users/yangyang/docs/node_modules/@vuepress/helper/lib/client/styles/colors.css";
+import "/Users/yangyang/docs/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
+import "/Users/yangyang/docs/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
+import "/Users/yangyang/docs/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
 
 defineCatalogInfoGetter((meta) => {
   const title = meta.t;

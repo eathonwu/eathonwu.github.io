@@ -1,3 +1,3 @@
-import "/Users/yangyang/vuepress-starter/node_modules/@mdit/plugin-spoiler/spoiler.css"
+import "/Users/yangyang/docs/node_modules/@mdit/plugin-spoiler/spoiler.css"
 
 

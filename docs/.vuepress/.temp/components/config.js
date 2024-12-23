@@ -1,10 +1,10 @@
-import { hasGlobalComponent } from "/Users/yangyang/vuepress-starter/node_modules/@vuepress/helper/lib/client/index.js";
-import { useScriptTag } from "/Users/yangyang/vuepress-starter/node_modules/@vueuse/core/index.mjs";
-import FontIcon from "/Users/yangyang/vuepress-starter/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
-import Badge from "/Users/yangyang/vuepress-starter/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
-import VPCard from "/Users/yangyang/vuepress-starter/node_modules/vuepress-plugin-components/lib/client/components/VPCard.js";
+import { hasGlobalComponent } from "/Users/yangyang/docs/node_modules/@vuepress/helper/lib/client/index.js";
+import { useScriptTag } from "/Users/yangyang/docs/node_modules/@vueuse/core/index.mjs";
+import FontIcon from "/Users/yangyang/docs/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
+import Badge from "/Users/yangyang/docs/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
+import VPCard from "/Users/yangyang/docs/node_modules/vuepress-plugin-components/lib/client/components/VPCard.js";
 
-import "/Users/yangyang/vuepress-starter/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
+import "/Users/yangyang/docs/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
 
 export default {
   enhance: ({ app }) => {

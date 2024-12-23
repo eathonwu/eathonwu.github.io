@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress-webpack dev docs",
-    "docs:build": "vuepress-webpack build blog",
+    "docs:build": "vuepress-webpack build docs",
     "docs:clean-dev": "vuepress-webpack dev blog --clean-cache",
     "docs:update-package": "npx vp-update"
   },
