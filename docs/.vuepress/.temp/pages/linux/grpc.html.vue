@@ -1,0 +1,32 @@
+<template><div><h1 id="背景" tabindex="-1"><a class="header-anchor" href="#背景"><span>背景</span></a></h1>
+<p>RPC，全称<code v-pre>Remote Procedure Call</code>，中文译为远程过程调用。通俗地讲，使用RPC进行通信，调用<strong>远程函数</strong>就像调用<strong>本地函数</strong>一样，RPC底层会做好数据的序列化与传输，从而能使我们更轻松地创建分布式应用和服务。</p>
+<figure><img src="https://pic1.zhimg.com/80/v2-361866d30e1b42814b577280dd7afaf0_1440w.webp" alt="img" tabindex="0" loading="lazy"><figcaption>img</figcaption></figure>
+<p>而gRPC，则是RPC的一种，它是<strong>免费且开源</strong>的，由谷歌出品。使用gRPC，我们只需要定义好每个API的Request和Response，剩下的gRPC这个框架会帮我们自动搞定。</p>
+<h1 id="通信流程" tabindex="-1"><a class="header-anchor" href="#通信流程"><span>通信流程</span></a></h1>
+<figure><img src="https://pic3.zhimg.com/80/v2-13d685915ee28ac36b80b110d1deecca_1440w.webp" alt="img" tabindex="0" loading="lazy"><figcaption>img</figcaption></figure>
+<p>通过stub桩代码对服务进行调用，桩代码里封装对应的编码解析、路由 登功能</p>
+<h2 id="定义对应proto" tabindex="-1"><a class="header-anchor" href="#定义对应proto"><span>定义对应proto</span></a></h2>
+<div class="language-protobuf line-numbers-mode" data-highlighter="shiki" data-ext="protobuf" data-title="protobuf" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">syntax</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "proto3"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">package</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> greeter.srv</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">option</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> go_package </span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "proto/greeter"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">service</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B"> Greeter</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">    rpc</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> SayHello</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B">HelloRequest</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">returns</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B">HelloReply</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {}</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// The request message containing the user's name.</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">message</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B"> HelloRequest</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">    string</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> name</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// The response message containing the greetings</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">message</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B"> HelloReply</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">    string</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> message</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="根据proto生成对应stub代码" tabindex="-1"><a class="header-anchor" href="#根据proto生成对应stub代码"><span>根据proto生成对应stub代码</span></a></h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative proto/greeter.proto</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></div></template>
+
+
