@@ -9,6 +9,11 @@ export const routes = Object.fromEntries([
   ["/demo/layout.html", { loader: () => import(/* webpackChunkName: "demo_layout.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/demo/layout.html.js"), meta: {"t":"布局","i":"object-group","O":2} }],
   ["/demo/markdown.html", { loader: () => import(/* webpackChunkName: "demo_markdown.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/demo/markdown.html.js"), meta: {"t":"Markdown 展示","i":"fab fa-markdown","O":2} }],
   ["/demo/page.html", { loader: () => import(/* webpackChunkName: "demo_page.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/demo/page.html.js"), meta: {"t":"页面配置","i":"file","O":3} }],
+  ["/go%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/GMP%E6%A8%A1%E5%9E%8B.html", { loader: () => import(/* webpackChunkName: "go语言基础_GMP模型.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/go语言基础/GMP模型.html.js"), meta: {"t":"GMP模型"} }],
+  ["/go%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/", { loader: () => import(/* webpackChunkName: "go语言基础_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/go语言基础/index.html.js"), meta: {"t":"go语言基础"} }],
+  ["/go%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/slice.html", { loader: () => import(/* webpackChunkName: "go语言基础_slice.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/go语言基础/slice.html.js"), meta: {"t":"slice"} }],
+  ["/go%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/%E5%8F%8D%E5%B0%84.html", { loader: () => import(/* webpackChunkName: "go语言基础_反射.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/go语言基础/反射.html.js"), meta: {"t":"反射"} }],
+  ["/guide/", { loader: () => import(/* webpackChunkName: "guide_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/guide/index.html.js"), meta: {"t":"指南","i":"lightbulb"} }],
   ["/java%E5%9F%BA%E7%A1%80/JUC.html", { loader: () => import(/* webpackChunkName: "java基础_JUC.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/java基础/JUC.html.js"), meta: {"t":"锁"} }],
   ["/java%E5%9F%BA%E7%A1%80/", { loader: () => import(/* webpackChunkName: "java基础_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/java基础/index.html.js"), meta: {"t":"java基础"} }],
   ["/java%E5%9F%BA%E7%A1%80/jvm.html", { loader: () => import(/* webpackChunkName: "java基础_jvm.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/java基础/jvm.html.js"), meta: {"t":"类加载机制"} }],
@@ -18,11 +23,7 @@ export const routes = Object.fromEntries([
   ["/java%E5%9F%BA%E7%A1%80/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html", { loader: () => import(/* webpackChunkName: "java基础_基本数据类型.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/java基础/基本数据类型.html.js"), meta: {"t":""} }],
   ["/java%E5%9F%BA%E7%A1%80/%E7%BA%BF%E7%A8%8B%E6%B1%A0.html", { loader: () => import(/* webpackChunkName: "java基础_线程池.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/java基础/线程池.html.js"), meta: {"t":""} }],
   ["/java%E5%9F%BA%E7%A1%80/%E9%9B%86%E5%90%88.html", { loader: () => import(/* webpackChunkName: "java基础_集合.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/java基础/集合.html.js"), meta: {"t":"List"} }],
-  ["/guide/", { loader: () => import(/* webpackChunkName: "guide_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/guide/index.html.js"), meta: {"t":"指南","i":"lightbulb"} }],
-  ["/go%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/GMP%E6%A8%A1%E5%9E%8B.html", { loader: () => import(/* webpackChunkName: "go语言基础_GMP模型.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/go语言基础/GMP模型.html.js"), meta: {"t":"GMP模型"} }],
-  ["/go%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/", { loader: () => import(/* webpackChunkName: "go语言基础_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/go语言基础/index.html.js"), meta: {"t":"go语言基础"} }],
-  ["/go%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/slice.html", { loader: () => import(/* webpackChunkName: "go语言基础_slice.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/go语言基础/slice.html.js"), meta: {"t":"slice"} }],
-  ["/go%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/%E5%8F%8D%E5%B0%84.html", { loader: () => import(/* webpackChunkName: "go语言基础_反射.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/go语言基础/反射.html.js"), meta: {"t":"反射"} }],
+  ["/%E4%BB%A3%E5%8A%9E/%E4%BB%A3%E5%8A%9E%E4%BA%8B%E9%A1%B9.html", { loader: () => import(/* webpackChunkName: "代办_代办事项.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/代办/代办事项.html.js"), meta: {"t":""} }],
   ["/linux/brew.html", { loader: () => import(/* webpackChunkName: "linux_brew.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/linux/brew.html.js"), meta: {"t":""} }],
   ["/linux/cross-wall.html", { loader: () => import(/* webpackChunkName: "linux_cross-wall.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/linux/cross-wall.html.js"), meta: {"t":""} }],
   ["/linux/emby.html", { loader: () => import(/* webpackChunkName: "linux_emby.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/linux/emby.html.js"), meta: {"t":""} }],
@@ -34,7 +35,13 @@ export const routes = Object.fromEntries([
   ["/linux/%E5%81%9C%E8%BD%A6%E5%9C%BA%E8%AE%BE%E8%AE%A1.html", { loader: () => import(/* webpackChunkName: "linux_停车场设计.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/linux/停车场设计.html.js"), meta: {"t":""} }],
   ["/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html", { loader: () => import(/* webpackChunkName: "linux_常用命令.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/linux/常用命令.html.js"), meta: {"t":""} }],
   ["/linux/%E6%9E%B6%E6%9E%84%E5%9F%BA%E7%A1%80.html", { loader: () => import(/* webpackChunkName: "linux_架构基础.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/linux/架构基础.html.js"), meta: {"t":"如何提高架构能力"} }],
-  ["/%E4%BB%A3%E5%8A%9E/%E4%BB%A3%E5%8A%9E%E4%BA%8B%E9%A1%B9.html", { loader: () => import(/* webpackChunkName: "代办_代办事项.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/代办/代办事项.html.js"), meta: {"t":""} }],
+  ["/%E5%88%86%E5%B8%83%E5%BC%8F/NWR.html", { loader: () => import(/* webpackChunkName: "分布式_NWR.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/NWR.html.js"), meta: {"t":"NWR"} }],
+  ["/%E5%88%86%E5%B8%83%E5%BC%8F/gossip%E5%8D%8F%E8%AE%AE.html", { loader: () => import(/* webpackChunkName: "分布式_gossip协议.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/gossip协议.html.js"), meta: {"t":"gossip协议"} }],
+  ["/%E5%88%86%E5%B8%83%E5%BC%8F/", { loader: () => import(/* webpackChunkName: "分布式_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/index.html.js"), meta: {"t":"分布式"} }],
+  ["/%E5%88%86%E5%B8%83%E5%BC%8F/paxos.html", { loader: () => import(/* webpackChunkName: "分布式_paxos.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/paxos.html.js"), meta: {"t":"paxos"} }],
+  ["/%E5%88%86%E5%B8%83%E5%BC%8F/raft%E5%8D%8F%E8%AE%AE.html", { loader: () => import(/* webpackChunkName: "分布式_raft协议.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/raft协议.html.js"), meta: {"t":"raft协议"} }],
+  ["/%E5%88%86%E5%B8%83%E5%BC%8F/zab%E5%8D%8F%E8%AE%AE.html", { loader: () => import(/* webpackChunkName: "分布式_zab协议.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/zab协议.html.js"), meta: {"t":"zab"} }],
+  ["/%E5%88%86%E5%B8%83%E5%BC%8F/%E4%BA%8B%E5%8A%A1.html", { loader: () => import(/* webpackChunkName: "分布式_事务.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/事务.html.js"), meta: {"t":"事务"} }],
   ["/%E5%85%B6%E4%BB%96/DDD%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1.html", { loader: () => import(/* webpackChunkName: "其他_DDD领域驱动设计.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/其他/DDD领域驱动设计.html.js"), meta: {"t":"DDD领域驱动设计"} }],
   ["/%E5%85%B6%E4%BB%96/c%E8%AF%AD%E8%A8%80.html", { loader: () => import(/* webpackChunkName: "其他_c语言.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/其他/c语言.html.js"), meta: {"t":"c语言"} }],
   ["/%E5%85%B6%E4%BB%96/golang%20%E5%B8%B8%E8%A7%81%E5%9D%91.html", { loader: () => import(/* webpackChunkName: "其他_golang 常见坑.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/其他/golang 常见坑.html.js"), meta: {"t":"golang常见坑"} }],
@@ -47,25 +54,18 @@ export const routes = Object.fromEntries([
   ["/%E5%85%B6%E4%BB%96/%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA.html", { loader: () => import(/* webpackChunkName: "其他_查漏补缺.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/其他/查漏补缺.html.js"), meta: {"t":"查漏补缺"} }],
   ["/%E5%85%B6%E4%BB%96/%E7%AE%97%E6%B3%95.html", { loader: () => import(/* webpackChunkName: "其他_算法.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/其他/算法.html.js"), meta: {"t":"算法"} }],
   ["/%E5%85%B6%E4%BB%96/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98.html", { loader: () => import(/* webpackChunkName: "其他_面试问题.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/其他/面试问题.html.js"), meta: {"t":"面试问题"} }],
-  ["/%E5%88%86%E5%B8%83%E5%BC%8F/NWR.html", { loader: () => import(/* webpackChunkName: "分布式_NWR.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/NWR.html.js"), meta: {"t":"NWR"} }],
-  ["/%E5%88%86%E5%B8%83%E5%BC%8F/gossip%E5%8D%8F%E8%AE%AE.html", { loader: () => import(/* webpackChunkName: "分布式_gossip协议.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/gossip协议.html.js"), meta: {"t":"gossip协议"} }],
-  ["/%E5%88%86%E5%B8%83%E5%BC%8F/", { loader: () => import(/* webpackChunkName: "分布式_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/index.html.js"), meta: {"t":"分布式"} }],
-  ["/%E5%88%86%E5%B8%83%E5%BC%8F/paxos.html", { loader: () => import(/* webpackChunkName: "分布式_paxos.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/paxos.html.js"), meta: {"t":"paxos"} }],
-  ["/%E5%88%86%E5%B8%83%E5%BC%8F/raft%E5%8D%8F%E8%AE%AE.html", { loader: () => import(/* webpackChunkName: "分布式_raft协议.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/raft协议.html.js"), meta: {"t":"raft协议"} }],
-  ["/%E5%88%86%E5%B8%83%E5%BC%8F/zab%E5%8D%8F%E8%AE%AE.html", { loader: () => import(/* webpackChunkName: "分布式_zab协议.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/zab协议.html.js"), meta: {"t":"zab"} }],
-  ["/%E5%88%86%E5%B8%83%E5%BC%8F/%E4%BA%8B%E5%8A%A1.html", { loader: () => import(/* webpackChunkName: "分布式_事务.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/分布式/事务.html.js"), meta: {"t":"事务"} }],
   ["/%E6%95%B0%E6%8D%AE%E5%BA%93/", { loader: () => import(/* webpackChunkName: "数据库_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/数据库/index.html.js"), meta: {"t":"数据库"} }],
   ["/%E6%9E%B6%E6%9E%84/", { loader: () => import(/* webpackChunkName: "架构_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/架构/index.html.js"), meta: {"t":"架构"} }],
   ["/%E6%9E%B6%E6%9E%84/%E5%BE%AE%E4%BF%A1%E6%9E%B6%E6%9E%84.html", { loader: () => import(/* webpackChunkName: "架构_微信架构.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/架构/微信架构.html.js"), meta: {"t":""} }],
   ["/%E7%AE%97%E6%B3%95/", { loader: () => import(/* webpackChunkName: "算法_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/算法/index.html.js"), meta: {"t":"算法"} }],
   ["/%E7%AE%97%E6%B3%95/%E5%9B%9E%E6%BA%AF.html", { loader: () => import(/* webpackChunkName: "算法_回溯.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/算法/回溯.html.js"), meta: {"t":"回溯"} }],
   ["/%E7%AE%97%E6%B3%95/%E9%99%90%E6%B5%81%E7%AE%97%E6%B3%95.html", { loader: () => import(/* webpackChunkName: "算法_限流算法.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/算法/限流算法.html.js"), meta: {"t":"限流算法"} }],
+  ["/guide/bar/", { loader: () => import(/* webpackChunkName: "guide_bar_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/guide/bar/index.html.js"), meta: {"t":"Bar 功能","i":"lightbulb"} }],
+  ["/guide/bar/baz.html", { loader: () => import(/* webpackChunkName: "guide_bar_baz.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/guide/bar/baz.html.js"), meta: {"t":"Baz","i":"circle-info"} }],
   ["/%E8%AF%BB%E4%B9%A6%E4%BB%BB%E5%8A%A1/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html", { loader: () => import(/* webpackChunkName: "读书任务_读书笔记.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/读书任务/读书笔记.html.js"), meta: {"t":""} }],
   ["/guide/foo/", { loader: () => import(/* webpackChunkName: "guide_foo_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/guide/foo/index.html.js"), meta: {"t":"Foo 功能","i":"lightbulb"} }],
   ["/guide/foo/ray%20copy.html", { loader: () => import(/* webpackChunkName: "guide_foo_ray copy.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/guide/foo/ray copy.html.js"), meta: {"t":"copy","i":"circle-info"} }],
   ["/guide/foo/ray.html", { loader: () => import(/* webpackChunkName: "guide_foo_ray.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/guide/foo/ray.html.js"), meta: {"t":"Ray","i":"circle-info"} }],
-  ["/guide/bar/", { loader: () => import(/* webpackChunkName: "guide_bar_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/guide/bar/index.html.js"), meta: {"t":"Bar 功能","i":"lightbulb"} }],
-  ["/guide/bar/baz.html", { loader: () => import(/* webpackChunkName: "guide_bar_baz.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/guide/bar/baz.html.js"), meta: {"t":"Baz","i":"circle-info"} }],
   ["/%E6%95%B0%E6%8D%AE%E5%BA%93/clickhosue/", { loader: () => import(/* webpackChunkName: "数据库_clickhosue_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/数据库/clickhosue/index.html.js"), meta: {"t":"clickhosue"} }],
   ["/%E6%95%B0%E6%8D%AE%E5%BA%93/clickhosue/sql%20join.html", { loader: () => import(/* webpackChunkName: "数据库_clickhosue_sql join.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/数据库/clickhosue/sql join.html.js"), meta: {"t":""} }],
   ["/%E6%95%B0%E6%8D%AE%E5%BA%93/clickhosue/%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%B0%83%E4%BC%98.html", { loader: () => import(/* webpackChunkName: "数据库_clickhosue_数据查询调优.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/数据库/clickhosue/数据查询调优.html.js"), meta: {"t":""} }],
@@ -105,20 +105,3 @@ export const routes = Object.fromEntries([
   ["/%E4%BB%A3%E5%8A%9E/", { loader: () => import(/* webpackChunkName: "代办_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/代办/index.html.js"), meta: {"t":"代办"} }],
   ["/%E8%AF%BB%E4%B9%A6%E4%BB%BB%E5%8A%A1/", { loader: () => import(/* webpackChunkName: "读书任务_index.html" */"/Users/yangyang/docs/docs/.vuepress/.temp/pages/读书任务/index.html.js"), meta: {"t":"读书任务"} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}
